@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+header h1{
+  text-align: center;
+  text-shadow: 0 0 5px rgb(70, 70, 70);
+}
+header .logo img{
+    width: 60px;
+    height: 60px;
+}
+@media(max-width:767px){
+    header h1{
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 0 0 2px rgb(70, 70, 70);
+    }
+    header .logo img{
+        width: 45px;
+        height: 45px;
+    }
+}
+

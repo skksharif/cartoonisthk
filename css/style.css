@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Architects Daughter', cursive;
+}
+
