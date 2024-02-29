@@ -84,6 +84,15 @@
   background: #0077b5;
   color: white;
 }
+.fa-pinterest {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.fa-pinterest:hover {
+  background: #a30000;
+  color: white;
+}
 
 @media(max-width:767px) {
   .fa {
