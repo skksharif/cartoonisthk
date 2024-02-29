@@ -35,6 +35,14 @@
   position: absolute;
   top: 0;
 }
+.text {
+  width: 100%;
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 0px;
+  bottom: 8px;
+  text-align: center;
+}
 .dot {
   cursor: pointer;
   height: 15px;

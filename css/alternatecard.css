@@ -1,0 +1,36 @@
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.box .acard{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+.box .acard .details{
+    width: 60%;
+}
+.box .acard .image{
+    width: 30%;
+}
+@media (max-width: 768px) {
+    .box .acard{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .box .acard .details{
+        width: 300px;
+    }
+    .box .acard .image{
+        width: 300px;
+    }
+}

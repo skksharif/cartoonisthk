@@ -65,3 +65,36 @@
     background: #ff0080;
     color: white;
 }
+.fa-twitter {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.fa-twitter:hover {
+  background: #1da1f2;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.fa-linkedin:hover {
+  background: #0077b5;
+  color: white;
+}
+
+@media(max-width:767px) {
+  .fa {
+      font-size: 25px;
+      width: 27px;
+      height: 20px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 15px;
+      border-radius: 100%;
+      padding: 15px 15px;
+      align-items: center;
+  }
+}

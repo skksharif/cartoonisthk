@@ -11,41 +11,6 @@
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <style>
-        .fa-twitter {
-            background: #ffffff;
-            color: rgb(0, 0, 0);
-        }
-
-        .fa-twitter:hover {
-            background: #1da1f2;
-            color: white;
-        }
-
-        .fa-linkedin {
-            background: #ffffff;
-            color: rgb(0, 0, 0);
-        }
-
-        .fa-linkedin:hover {
-            background: #0077b5;
-            color: white;
-        }
-
-        @media(max-width:767px) {
-            .fa {
-                font-size: 25px;
-                width: 27px;
-                height: 20px;
-                text-align: center;
-                text-decoration: none;
-                margin: 5px 15px;
-                border-radius: 100%;
-                padding: 15px 15px;
-                align-items: center;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -65,25 +30,22 @@
         </div>
         <nav>
             <a href="./index.php">Home</a>
-            <a href="">Sports</a>
-            <a href="">Editorial</a>
-            <a href="">Media</a>
-            <a href="">Testimonial</a>
-            <a href="#">Committee</a>
-            <a href="">Context</a>
+      
+            <div class="dropdown">
+                <button class="dropbtn">Sports</button>
+                <div class="dropdown-content">
+                  <a href="./cricket.html">Cricket</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            <a href="./editorial.html">Editorial</a>
+            <a href="./media.html">Media</a>
+            <a href="./tesimonial.html">Testimonial</a>
+            <a href="./context.html">Committee</a>
+            <a href="./context.html">Context</a>
         </nav>
     </div>
-    <script src="./js/navbar.js"></script>
-    <style>
-        .text {
-            width: 100%;
-            color: #000000;
-            font-size: 15px;
-            padding: 8px 0px;
-            bottom: 8px;
-            text-align: center;
-        }
-    </style>
     <div class="slideshow-container">
         <div class="mySlides fade">
             <img src="./images/1.png">
@@ -108,7 +70,6 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <script src="./js/slider.js"></script>
     <div class="about-container">
         <h1>About</h1>
         <div class="about">
@@ -169,5 +130,6 @@
         <p>© 2021. All rights reserved.</p>
     </div>
 </body>
-
+<script src="./js/navbar.js"></script>
+<script src="./js/slider.js"></script>
 </html>

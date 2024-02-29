@@ -16,3 +16,11 @@
     margin: 0 auto;
     padding: 5px 10px;
 }
+@media(max-width:800px){
+    .about-text p{
+        text-align: justify;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 5px 10px;
+    } 
+}
