@@ -1,0 +1,18 @@
+.about-container h1{
+   text-align: center;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about img{
+    max-width: 250px;
+}
+.about-text p{
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px 10px;
+}

@@ -9,7 +9,7 @@ header{
 }
 header h1{
   text-align: center;
-  text-shadow: 0 0 5px rgb(70, 70, 70);
+  text-shadow: 0 0 2px rgb(70, 70, 70);
 }
 header .logo img{
     width: 60px;
