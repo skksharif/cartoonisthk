@@ -16,8 +16,9 @@
   text-align: center;
 }
 .footer .social-icons{
-  width: 50%;
+  width: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
