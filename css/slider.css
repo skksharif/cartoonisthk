@@ -5,6 +5,7 @@
 }
 .mySlides img{
   width: 100%;
+  height: 510px;
 }
 .prev, .next {
   cursor: pointer;
@@ -67,4 +68,5 @@
 }
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+
 }
