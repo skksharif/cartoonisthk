@@ -5,5 +5,135 @@
     box-sizing: none;
     font-family: 'Courier New', Courier, monospace;
     font-family: 'Architects Daughter', cursive;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.fixed-button {
+  position: fixed;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  top: 85%;
+  background-color: #007bff;
+  color: white;
+  padding: 18px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed-button .fa{
+  font-size: 22px;
+}
+.options-container {
+  display: none;
+  transition: all 0.3s ease; 
+  position: fixed;
+  right: 10px;
+  top: 60%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.social-icon, .contact-option {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.social-icon:hover, .contact-option:hover {
+  color: #007bff;
+}
+.options-container .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.options-container .fa-facebook{
+    background: #3b5998;
+    color: white;
+}
+
+
+.options-container .fa-youtube{
+    background: #bb0000;
+    color: white;
+}
+
+.options-container .fa-instagram{
+    background: #ff0080;
+    color: white;
+}
+
+
+.options-container .fa-twitter {
+  background: #1da1f2;
+  color: white;
+}
+
+
+.options-container .fa-linkedin {
+  background: #0077b5;
+  color: white;
+}
+
+
+.options-container .fa-pinterest {
+  background: #a30000;
+  color: white;
+}
+
+@media(max-width:767px) {
+  .options-container .fa {
+      font-size: 25px;
+      width: 20px;
+      height: 20px;
+      padding: 15px 15px;
+  }
+  .options-container {
+    display: none;
+    position: fixed;
+    right: 7px;
+    top: 59%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    z-index: 999;
+  }
+  .fixed-button {
+    position: fixed;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    top: 85%;
+    background-color: #007bff;
+    color: white;
+    padding: 16px;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fixed-button .fa{
+    font-size: 20px;
+  }
 }
 

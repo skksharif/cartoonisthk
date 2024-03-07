@@ -39,8 +39,8 @@
             <a href="./editorial.html">Editorial</a>
             <a href="./media.html">Media</a>
             <a href="./tesimonial.html">Testimonial</a>
-            <a href="./context.html">Caricatures</a>
-            <a href="./context.html">Contact</a>
+            <a href="./caricatures.html">Caricatures</a>
+            <a href="./contact.html">Contact</a>
         </nav>
     </div>
     <center><h1>Editorial</h1></center>
@@ -287,6 +287,28 @@
     <div class='copy-footer'>
         <p>© 2021. All rights reserved.</p>
     </div>
+    <div class="fixed-button" onclick="toggleOptions()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="options-container" id="options-container">
+        <a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a>
+        <a href="#" class="social-icon"> <i class="fa fa-instagram"></i></a>
+        <a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+        <a href="#" class="contact-option"> <i class="fa fa-pinterest"></i></a>
+        <a href="#" class="contact-option"> <i class="fa fa-twitter"></i></a>
+        <a href="#" class="contact-option"> <i class="fa fa-youtube"></i></a>
+    </div>
 </body>
+<script>
+    function toggleOptions() {
+        var optionsContainer = document.getElementById('options-container');
+        if (optionsContainer.style.display === 'block') {
+            optionsContainer.style.display = 'none';
+        } else {
+            optionsContainer.style.display = 'block';
+        }
+    }
+</script>
+
 <script src="./js/navbar.js"></script>
 </html>

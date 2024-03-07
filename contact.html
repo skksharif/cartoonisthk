@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +11,8 @@
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/conatct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -31,13 +32,13 @@
         </div>
         <nav>
             <a href="./index.html">Home</a>
-
+      
             <div class="dropdown">
                 <button class="dropbtn">Sports</button>
                 <div class="dropdown-content">
-                    <a href="./cricket.html">Cricket</a>
+                  <a href="./cricket.html">Cricket</a>
                 </div>
-            </div>
+              </div>
             <a href="./editorial.html">Editorial</a>
             <a href="./media.html">Media</a>
             <a href="./tesimonial.html">Testimonial</a>
@@ -45,59 +46,16 @@
             <a href="./contact.html">Contact</a>
         </nav>
     </div>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="./images/s1.jpg">
-            <div class="text">Caption one</div>
+
+
+     <div class="contact-container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p><i class="fa fa-phone"></i> <a href="tel:+123456789">+123456789</a></p>
+            <p><i class="fa fa-envelope"></i> <a href="mailto:example@example.com">example@example.com</a></p>
         </div>
-        <div class="mySlides fade">
-            <img src="./images/s2.jpg">
-            <div class="text">Caption Two</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="./images/s4.jpg">
-            <div class="text">Caption Four</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
-    <br>
-    <div style="text-align:center; margin-top: -25px;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <div class="about-container">
-        <h1>About</h1>
-        <div class="about">
-            <div class="about-img">
-                <img src="./images/c2.jpg" alt="">
-            </div>
-            <div class="about-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    laborum.</p>
-            </div>
-        </div>
-        <!--    <div class="about-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div> -->
-    </div>
-    </div>
+
     <div class='footer'>
         <center>
             <h1>Hari Krishna - Cartoonist</h1>
@@ -123,9 +81,8 @@
     <div class='copy-footer'>
         <p>© 2021. All rights reserved.</p>
     </div>
-
     <div class="fixed-button" onclick="toggleOptions()">
-        <i class="fa fa-bars" id="menu-icon"></i>
+        <i class="fa fa-bars"></i>
     </div>
     <div class="options-container" id="options-container">
         <a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a>
@@ -136,21 +93,17 @@
         <a href="#" class="contact-option"> <i class="fa fa-youtube"></i></a>
     </div>
 </body>
-<script src="./js/navbar.js"></script>
-<script src="./js/slider.js"></script>
 <script>
     function toggleOptions() {
         var optionsContainer = document.getElementById('options-container');
-        var menuIcon = document.getElementById('menu-icon');
         if (optionsContainer.style.display === 'block') {
             optionsContainer.style.display = 'none';
+
         } else {
             optionsContainer.style.display = 'block';
         }
-        var menuIcon = document.getElementById('menu-icon');
-    menuIcon.classList.toggle('fa-bars');
-    menuIcon.classList.toggle('fa-times');
     }
 </script>
-
+<script src="./js/navbar.js"></script>
+<script src="./js/slider.js"></script>
 </html>
