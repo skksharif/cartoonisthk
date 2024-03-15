@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
+    <div id="preview">
+        <img id="previewImage" src="" alt="Preview" />
+    </div>
     <header>
         <h1>cartoonist Hari Krishna</h1>
         <div class="logo">
@@ -44,10 +47,10 @@
         </nav>
     </div>
     <center><h1>Award Winnings</h1></center>
-    <div class="box">
+    <div class="box" id="body">
         <div class="card">
             <div class="image">
-                <img src="./images/award_winning/1.jpg" alt="">
+                <img src="./images/award_winning/1.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,7 +62,7 @@
         </div>
         <div class="acard">
             <div class="image">
-                <img src="./images/award_winning/2.jpg" alt="">
+                <img src="./images/award_winning/2.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -71,7 +74,7 @@
         </div>
         <div class="card">
             <div class="image">
-                <img src="./images/award_winning/brain_for_vote.jpg" alt="">
+                <img src="./images/award_winning/brain_for_vote.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,7 +86,7 @@
         </div>
         <div class="acard">
             <div class="image">
-                <img src="./images/award_winning/dog_peeing.jpg" alt="">
+                <img src="./images/award_winning/dog_peeing.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -95,7 +98,7 @@
         </div>
         <div class="card">
             <div class="image">
-                <img src="./images/award_winning/entry.jpg" alt="">
+                <img src="./images/award_winning/entry.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -107,7 +110,7 @@
         </div>
         <div class="acard">
             <div class="image">
-                <img src="./images/award_winning/Firstcartoon.jpg" alt="">
+                <img src="./images/award_winning/Firstcartoon.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -119,7 +122,7 @@
         </div>
         <div class="card">
             <div class="image">
-                <img src="./images/award_winning/gotelugu.jpg" alt="">
+                <img src="./images/award_winning/gotelugu.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -131,7 +134,7 @@
         </div>
         <div class="acard">
             <div class="image">
-                <img src="./images/award_winning/fake_nes.jpg" alt="">
+                <img src="./images/award_winning/fake_nes.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -143,7 +146,7 @@
         </div>
         <div class="card">
             <div class="image">
-                <img src="./images/award_winning/money.jpg" alt="">
+                <img src="./images/award_winning/money.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -155,7 +158,7 @@
         </div>
         <div class="acard">
             <div class="image">
-                <img src="./images/award_winning/ram.jpg" alt="">
+                <img src="./images/award_winning/ram.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -167,7 +170,7 @@
         </div>
         <div class="card">
             <div class="image">
-                <img src="./images/award_winning/rivers.jpg" alt="">
+                <img src="./images/award_winning/rivers.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -179,7 +182,7 @@
         </div>
         <div class="acard">
             <div class="image">
-                <img src="./images/award_winning/tana.jpg" alt="">
+                <img src="./images/award_winning/tana.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -191,7 +194,7 @@
         </div>
         <div class="card">
             <div class="image">
-                <img src="./images/award_winning/water_wastage.jpg" alt="">
+                <img src="./images/award_winning/water_wastage.jpg" alt="" onclick="showPreview(this)">
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -209,7 +212,7 @@
         <div class='about-footer'>
             <p>
                 Welcome to the vibrant world of cartooning! Our resident cartoonist,
-                [Cartoonist's Name], is a master of bringing imagination to life
+                Hari Krishna, is a master of bringing imagination to life
                 through the stroke of a pen. With an innate talent for humor and
                 a keen eye for detail, [Cartoonist's Name] captivates audiences
                 of all ages with their witty creations.
@@ -239,6 +242,23 @@
         <a href="#" class="contact-option"> <i class="fa fa-youtube"></i></a>
     </div>
 </body>
+<script>
+    function showPreview(img) {
+      var preview = document.getElementById('preview');
+      var previewImg = document.getElementById('previewImage');
+      
+      previewImg.src = img.src;
+      preview.style.display = 'flex';
+      preview.style.justifyContent = 'center';
+      preview.style.alignItems = 'center';
+      var body = document.getElementById('body').style.filter = "blur(10px)";
+    }
+    
+    document.getElementById('preview').onclick = function() {
+      this.style.display = 'none';
+      var body = document.getElementById('body').style.filter = "none";
+    };
+    </script>
 <script>
     function toggleOptions() {
         var optionsContainer = document.getElementById('options-container');

@@ -5,7 +5,7 @@ header{
     background-color: white;
     justify-content: space-around;
     align-items: center;
-    z-index: 999;
+    z-index: 10;
 }
 header h1{
   text-align: center;

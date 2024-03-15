@@ -11,6 +11,9 @@
 body::-webkit-scrollbar{
   display: none;
 }
+h1{
+  z-index: 0;
+}
 .fixed-button {
   position: fixed;
   right: 20px;
@@ -40,7 +43,6 @@ body::-webkit-scrollbar{
   border-radius: 5px;
   z-index: 999;
 }
-
 .social-icon, .contact-option {
   display: block;
   margin-bottom: 10px;
@@ -64,37 +66,26 @@ body::-webkit-scrollbar{
   justify-content: center;
   align-items: center;
 }
-
-
 .options-container .fa-facebook{
     background: #3b5998;
     color: white;
 }
-
-
 .options-container .fa-youtube{
     background: #bb0000;
     color: white;
 }
-
 .options-container .fa-instagram{
     background: #ff0080;
     color: white;
 }
-
-
 .options-container .fa-twitter {
   background: #1da1f2;
   color: white;
 }
-
-
 .options-container .fa-linkedin {
   background: #0077b5;
   color: white;
 }
-
-
 .options-container .fa-pinterest {
   background: #a30000;
   color: white;
@@ -135,5 +126,32 @@ body::-webkit-scrollbar{
   .fixed-button .fa{
     font-size: 20px;
   }
+  #preview {
+    width: 100vw;
+    height: auto;  
+  }
+  #preview img{
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    z-index: 999;
+    background-color: rgba(225,225,225,0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
 }
+#preview {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
 
+}
+#preview img{
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  z-index: 999;
+  background-color: rgba(225,225,225,0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}

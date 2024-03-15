@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
-<body>
+
+<body >
+    <div id="preview">
+        <img id="previewImage" src="" alt="Preview" />
+    </div>
     <header>
         <h1>cartoonist Hari Krishna</h1>
         <div class="logo">
@@ -43,11 +47,13 @@
             <a href="./contact.html">Contact</a>
         </nav>
     </div>
+      
     <center><h1>Media</h1></center>
-    <div class="box">
+
+    <div class="box" id="body">
         <div class="card">
             <div class="image">
-                <img src="./images/media/m1.jpg" alt="">
+                <img src="./images/media/m1.jpg" alt="" onclick="showPreview(this)" >
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,7 +65,7 @@
         </div>
         <div class="acard">
             <div class="image">
-                <img src="./images/media/m2.jpg" alt="">
+                <img src="./images/media/m2.jpg" alt="" onclick="showPreview(this)" >
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -71,7 +77,7 @@
         </div>
         <div class="card">
             <div class="image">
-                <img src="./images/media/m3.jpg" alt="">
+                <img src="./images/media/m3.jpg" alt="" onclick="showPreview(this)" >
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,7 +89,7 @@
         </div>
         <div class="acard">
             <div class="image">
-                <img src="./images/media/m4.jpg" alt="">
+                <img src="./images/media/m4.jpg" alt="" onclick="showPreview(this)" >
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -95,31 +101,7 @@
         </div>
         <div class="card">
             <div class="image">
-                <img src="./images/c4.jpg" alt="">
-            </div>
-            <div class="details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus ex iusto inventore, quae ea eius aperiam et autem.
-                Distinctio consequatur dolor dolore id iste dolores exercitationem
-                reprehenderit magni ex inventore!
-                </p>
-            </div>
-        </div>
-        <div class="acard">
-            <div class="image">
-                <img src="./images/c4.jpg" alt="">
-            </div>
-            <div class="details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus ex iusto inventore, quae ea eius aperiam et autem.
-                Distinctio consequatur dolor dolore id iste dolores exercitationem
-                reprehenderit magni ex inventore!
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="./images/c4.jpg" alt="">
+                <img src="./images/c4.jpg" alt="" onclick="showPreview(this)" >
             </div>
             <div class="details">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -213,54 +195,7 @@
                 </p>
             </div>
         </div>
-        <div class="card">
-            <div class="image">
-                <img src="./images/c4.jpg" alt="">
-            </div>
-            <div class="details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus ex iusto inventore, quae ea eius aperiam et autem.
-                Distinctio consequatur dolor dolore id iste dolores exercitationem
-                reprehenderit magni ex inventore!
-                </p>
-            </div>
-        </div>
-        <div class="acard">
-            <div class="image">
-                <img src="./images/c4.jpg" alt="">
-            </div>
-            <div class="details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus ex iusto inventore, quae ea eius aperiam et autem.
-                Distinctio consequatur dolor dolore id iste dolores exercitationem
-                reprehenderit magni ex inventore!
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="./images/c4.jpg" alt="">
-            </div>
-            <div class="details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus ex iusto inventore, quae ea eius aperiam et autem.
-                Distinctio consequatur dolor dolore id iste dolores exercitationem
-                reprehenderit magni ex inventore!
-                </p>
-            </div>
-        </div>
-        <div class="acard">
-            <div class="image">
-                <img src="./images/c4.jpg" alt="">
-            </div>
-            <div class="details">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus ex iusto inventore, quae ea eius aperiam et autem.
-                Distinctio consequatur dolor dolore id iste dolores exercitationem
-                reprehenderit magni ex inventore!
-                </p>
-            </div>
-        </div>
+
     </div>
     <div class='footer'>
         <center>
@@ -299,6 +234,23 @@
         <a href="#" class="contact-option"> <i class="fa fa-youtube"></i></a>
     </div>
 </body>
+<script>
+    function showPreview(img) {
+      var preview = document.getElementById('preview');
+      var previewImg = document.getElementById('previewImage');
+      
+      previewImg.src = img.src;
+      preview.style.display = 'flex';
+      preview.style.justifyContent = 'center';
+      preview.style.alignItems = 'center';
+      var body = document.getElementById('body').style.filter = "blur(10px)";
+    }
+    
+    document.getElementById('preview').onclick = function() {
+      this.style.display = 'none';
+      var body = document.getElementById('body').style.filter = "none";
+    };
+</script>
 <script>
     function toggleOptions() {
         var optionsContainer = document.getElementById('options-container');
