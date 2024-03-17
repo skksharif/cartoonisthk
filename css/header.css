@@ -7,23 +7,25 @@ header{
     align-items: center;
     z-index: 10;
 }
-header h1{
-  text-align: center;
-  text-shadow: 0 0 2px rgb(70, 70, 70);
-}
+
 header .logo img{
-    width: 60px;
-    height: 60px;
+    width: 200px;
+}
+.yt{
+    text-align: center;
+}
+header .yt img{
+    width: 100px;
 }
 @media(max-width:767px){
-    header h1{
-        font-size: 20px;
-        text-align: center;
-        text-shadow: 0 0 2px rgb(70, 70, 70);
+    header{
+        justify-content: center;
     }
     header .logo img{
-        width: 45px;
-        height: 45px;
+        width: 200px;
+    }
+    .yt{
+        display: none;
     }
 }
 

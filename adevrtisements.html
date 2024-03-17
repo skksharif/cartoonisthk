@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cricket</title>
-
-    <link rel="stylesheet" href="./css/testimonials.css">
-    <link rel="stylesheet" href="./css/alternatecard.css">
+    <link rel="stylesheet" href="./css/ads.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -15,7 +12,10 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 
-<body>
+<body >
+    <div id="preview">
+        <img id="previewImage" src="" alt="Preview" />
+    </div>
     <header>
        
         <div class="logo">
@@ -53,94 +53,48 @@
             <a href="./contact.html">Contact</a>
         </nav>
     </div>
-    <center><h1>Testimonials</h1></center>
-    <div class="container">
+      
+    <center><h1>Advertisements</h1></center>
+
+    <div class="box" id="body">
         <div class="card">
-            <div class="imgbx">
-                <img src="./images/logo.png" alt="XXXXXXXXX">
-            </div>
-            <div class="content">
-                <h2>XXXXXXXXX</h2>
-                <h3>yyyyyyyy yyyyyyyyyyyyyy</h3>
-                <p>The primary objective of XXXXXXXXX is encouraging participants to present their papers,
-                    the event aims to foster a spirit of exploration and creativity.</p>
+            <div class="image">
+                <img src="./images/advertisements/a1.jpg" alt="" onclick="showPreview(this)" >
             </div>
         </div>
         <div class="card">
-            <div class="imgbx">
-                <img src="./images/logo.png" alt="XXXXXXXXX">
-            </div>
-            <div class="content">
-                <h2>XXXXXXXXX</h2>
-                <h3>yyyyyyyy yyyyyyyyyyyyyy</h3>
-                <p>The primary objective of XXXXXXXXX is encouraging participants to present their papers,
-                    the event aims to foster a spirit of exploration and creativity.</p>
+            <div class="image">
+                <img src="./images/advertisements/a2.jpg" alt="" onclick="showPreview(this)" >
             </div>
         </div>
         <div class="card">
-            <div class="imgbx">
-                <img src="./images/logo.png" alt="XXXXXXXXX">
-            </div>
-            <div class="content">
-                <h2>XXXXXXXXX</h2>
-                <h3>yyyyyyyy yyyyyyyyyyyyyy</h3>
-                <p>The primary objective of XXXXXXXXX is encouraging participants to present their papers,
-                    the event aims to foster a spirit of exploration and creativity.</p>
+            <div class="image">
+                <img src="./images/advertisements/a3.jpg" alt="" onclick="showPreview(this)" >
             </div>
         </div>
         <div class="card">
-            <div class="imgbx">
-                <img src="./images/logo.png" alt="XXXXXXXXX">
-            </div>
-            <div class="content">
-                <h2>XXXXXXXXX</h2>
-                <h3>yyyyyyyy yyyyyyyyyyyyyy</h3>
-                <p>The primary objective of XXXXXXXXX is encouraging participants to present their papers,
-                    the event aims to foster a spirit of exploration and creativity.</p>
+            <div class="image">
+                <img src="./images/advertisements/a4.jpg" alt="" onclick="showPreview(this)" >
             </div>
         </div>
         <div class="card">
-            <div class="imgbx">
-                <img src="./images/logo.png" alt="XXXXXXXXX">
+            <div class="image">
+                <img src="./images/advertisements/a5.jpg" alt="" onclick="showPreview(this)" >
             </div>
-            <div class="content">
-                <h2>XXXXXXXXX</h2>
-                <h3>yyyyyyyy yyyyyyyyyyyyyy</h3>
-                <p>The primary objective of XXXXXXXXX is encouraging participants to present their papers,
-                    the event aims to foster a spirit of exploration and creativity.</p>
+        </div>
+         <div class="card">
+            <div class="image">
+                <img src="./images/advertisements/a6.jpg" alt="" onclick="showPreview(this)" >
             </div>
         </div>
         <div class="card">
-            <div class="imgbx">
-                <img src="./images/logo.png" alt="XXXXXXXXX">
-            </div>
-            <div class="content">
-                <h2>XXXXXXXXX</h2>
-                <h3>yyyyyyyy yyyyyyyyyyyyyy</h3>
-                <p>The primary objective of XXXXXXXXX is encouraging participants to present their papers,
-                    the event aims to foster a spirit of exploration and creativity.</p>
+            <div class="image">
+                <img src="./images/advertisements/a8.jpg" alt="" onclick="showPreview(this)" >
             </div>
         </div>
         <div class="card">
-            <div class="imgbx">
-                <img src="./images/logo.png" alt="XXXXXXXXX">
-            </div>
-            <div class="content">
-                <h2>XXXXXXXXX</h2>
-                <h3>yyyyyyyy yyyyyyyyyyyyyy</h3>
-                <p>The primary objective of XXXXXXXXX is encouraging participants to present their papers,
-                    the event aims to foster a spirit of exploration and creativity.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgbx">
-                <img src="./images/logo.png" alt="XXXXXXXXX">
-            </div>
-            <div class="content">
-                <h2>XXXXXXXXX</h2>
-                <h3>yyyyyyyy yyyyyyyyyyyyyy</h3>
-                <p>The primary objective of XXXXXXXXX is encouraging participants to present their papers,
-                    the event aims to foster a spirit of exploration and creativity.</p>
+            <div class="image">
+                <img src="./images/advertisements/a9.jpg" alt="" onclick="showPreview(this)" >
             </div>
         </div>
     </div>
@@ -182,6 +136,23 @@
     </div>
 </body>
 <script>
+    function showPreview(img) {
+      var preview = document.getElementById('preview');
+      var previewImg = document.getElementById('previewImage');
+      
+      previewImg.src = img.src;
+      preview.style.display = 'flex';
+      preview.style.justifyContent = 'center';
+      preview.style.alignItems = 'center';
+      var body = document.getElementById('body').style.filter = "blur(10px)";
+    }
+    
+    document.getElementById('preview').onclick = function() {
+      this.style.display = 'none';
+      var body = document.getElementById('body').style.filter = "none";
+    };
+</script>
+<script>
     function toggleOptions() {
         var optionsContainer = document.getElementById('options-container');
         if (optionsContainer.style.display === 'block') {
@@ -195,5 +166,4 @@
     }
 </script>
 <script src="./js/navbar.js"></script>
-
 </html>

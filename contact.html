@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,19 @@
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/conatct.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
     <header>
-        <h1>cartoonist Hari Krishna</h1>
         <div class="logo">
             <img src="./images/logo.png" alt="">
         </div>
+       <a href="https://www.youtube.com/HariKrishnaCartoonist" target="_blank" rel="noopener noreferrer">
+        <div class="yt">
+            <h4>/CartoonistHariKrishna</h4>
+            <img src="./images/CartoonistHariKrishna.png" alt="">
+        </div>
+       </a>
+        
     </header>
     <div class="navbar" id="mynav">
         <div class="responsive">
@@ -32,23 +37,23 @@
         </div>
         <nav>
             <a href="./index.html">Home</a>
-      
+
             <div class="dropdown">
                 <button class="dropbtn">Sports</button>
                 <div class="dropdown-content">
-                  <a href="./cricket.html">Cricket</a>
+                    <a href="./cricket.html">Cricket</a>
                 </div>
-              </div>
+            </div>
             <a href="./editorial.html">Editorial</a>
             <a href="./media.html">Media</a>
             <a href="./tesimonial.html">Testimonial</a>
+            <a href="./adevrtisements.html">Advertisements</a>
             <a href="./Award Winnings.html">Award Winnings</a>
             <a href="./contact.html">Contact</a>
         </nav>
     </div>
 
-
-     <div class="contact-container">
+    <div class="contact-container">
         <h1>Contact Us</h1>
         <div class="contact-info">
             <p><i class="fa fa-phone"></i> <a href="tel:9951817518">+91 9951817518</a></p>
@@ -56,6 +61,7 @@
         </div>
     </div>
 
+    
     <div class='footer'>
         <center>
             <h1>Hari Krishna - Cartoonist</h1>
@@ -81,8 +87,9 @@
     <div class='copy-footer'>
         <p>© 2021. All rights reserved.</p>
     </div>
+
     <div class="fixed-button" onclick="toggleOptions()">
-              <i class="fa fa-bars" id="menu-icon"></i>
+        <i class="fa fa-bars" id="menu-icon"></i>
     </div>
     <div class="options-container" id="options-container">
         <a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a>
@@ -93,12 +100,14 @@
         <a href="#" class="contact-option"> <i class="fa fa-youtube"></i></a>
     </div>
 </body>
+<script src="./js/navbar.js"></script>
+<script src="./js/slider.js"></script>
 <script>
     function toggleOptions() {
         var optionsContainer = document.getElementById('options-container');
+        var menuIcon = document.getElementById('menu-icon');
         if (optionsContainer.style.display === 'block') {
             optionsContainer.style.display = 'none';
-
         } else {
             optionsContainer.style.display = 'block';
         }
@@ -107,6 +116,5 @@
         menuIcon.classList.toggle('fa-times');
     }
 </script>
-<script src="./js/navbar.js"></script>
-<script src="./js/slider.js"></script>
+
 </html>
