@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cartoonisthk</title>
+    <title>cricket</title>
+    <link rel="stylesheet" href="./css/ads.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
-<body>
+
+<body >
+    <div id="preview">
+        <img id="previewImage" src="" alt="Preview" />
+    </div>
     <header>
+       
         <div class="logo">
             <img src="./images/logo.png" alt="">
         </div>
-       <a href="https://www.youtube.com/HariKrishnaCartoonist" target="_blank" rel="noopener noreferrer">
-        <div class="yt">
-            <h4>/CartoonistHariKrishna</h4>
-            <img src="./images/CartoonistHariKrishna.png" alt="">
-        </div>
-       </a>
-        
+        <a href="https://www.youtube.com/HariKrishnaCartoonist" target="_blank" rel="noopener noreferrer">
+            <div class="yt">
+                <h4>/CartoonistHariKrishna</h4>
+                <img src="./images/CartoonistHariKrishna.png" alt="">
+            </div>
+           </a>
     </header>
     <div class="navbar" id="mynav">
         <div class="responsive">
@@ -52,59 +54,78 @@
             <a href="./contact.html">Contact</a>
         </nav>
     </div>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="./images/s1.jpg">
-            <div class="text">Caption one</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="./images/s2.jpg">
-            <div class="text">Caption Two</div>
-        </div>
-        <div class="mySlides fade">
-            <img src="./images/s4.jpg">
-            <div class="text">Caption Four</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-    <br>
-    <div style="text-align:center; margin-top: -25px;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <div class="about-container">
-        <h1>About</h1>
-        <div class="about">
-            <div class="about-img">
-                <img src="./images/c2.jpg" alt="">
-            </div>
-            <div class="about-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    laborum.</p>
+      
+    <center><h1>Advertisements</h1></center>
+
+    <div class="box" id="body">
+        <div class="card">
+            <div class="image">
+                <img src="./images/movies/m1.jpg" alt="" onclick="showPreview(this)" >
             </div>
         </div>
-        <!--    <div class="about-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div> -->
-    </div>
-    </div>
+        <div class="card">
+            <div class="image">
+                <img src="./images/movies/m2.jpg" alt="" onclick="showPreview(this)" >
+            </div>
+        </div> 
+        <div class="card">
+            <div class="image">
+                <img src="./images/movies/m3.jpg" alt="" onclick="showPreview(this)" >
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./images/movies/m4.jpg" alt="" onclick="showPreview(this)" >
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./images/movies/m5.jpg" alt="" onclick="showPreview(this)" >
+            </div>
+        </div>
+         <div class="card">
+            <div class="image">
+                <img src="./images/movies/m6.jpg" alt="" onclick="showPreview(this)" >
+            </div>
+        </div>
+         <div class="card">
+            <div class="image">
+                <img src="./images/movies/m7.jpg" alt="" onclick="showPreview(this)" >
+            </div>
+        </div> 
+        <div class="card">
+            <div class="image">
+                <img src="./images/movies/m8.jpg" alt="" onclick="showPreview(this)" >
+            </div>
+        </div>
+         <div class="card">
+            <div class="image">
+                <img src="./images/movies/m9.jpg" alt="" onclick="showPreview(this)" >
+            </div>
+        </div>
+         <div class="card">
+            <div class="image">
+                <img src="./images/movies/m10.jpg" alt="" onclick="showPreview(this)" >
+           </div>
+         </div>
+         <div class="card">
+            <div class="image">
+                <img src="./images/movies/m11.jpg" alt="" onclick="showPreview(this)" >
+           </div>
+         </div>
+         <div class="card">
+            <div class="image">
+                <img src="./images/movies/m12.jpg" alt="" onclick="showPreview(this)" >
+           </div>
+         </div>
+         <div class="card">
+            <div class="image">
+                <img src="./images/movies/m13.jpg" alt="" onclick="showPreview(this)" >
+           </div>
+         </div>
+
+
+   
     <div class='footer'>
         <center>
             <h1>Hari Krishna - Cartoonist</h1>
@@ -130,9 +151,8 @@
     <div class='copy-footer'>
         <p>© 2021. All rights reserved.</p>
     </div>
-
     <div class="fixed-button" onclick="toggleOptions()">
-        <i class="fa fa-bars" id="menu-icon"></i>
+              <i class="fa fa-bars" id="menu-icon"></i>
     </div>
     <div class="options-container" id="options-container">
         <a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a>
@@ -143,12 +163,26 @@
         <a href="#" class="contact-option"> <i class="fa fa-youtube"></i></a>
     </div>
 </body>
-<script src="./js/navbar.js"></script>
-<script src="./js/slider.js"></script>
+<script>
+    function showPreview(img) {
+      var preview = document.getElementById('preview');
+      var previewImg = document.getElementById('previewImage');
+      
+      previewImg.src = img.src;
+      preview.style.display = 'flex';
+      preview.style.justifyContent = 'center';
+      preview.style.alignItems = 'center';
+      var body = document.getElementById('body').style.filter = "blur(10px)";
+    }
+    
+    document.getElementById('preview').onclick = function() {
+      this.style.display = 'none';
+      var body = document.getElementById('body').style.filter = "none";
+    };
+</script>
 <script>
     function toggleOptions() {
         var optionsContainer = document.getElementById('options-container');
-        var menuIcon = document.getElementById('menu-icon');
         if (optionsContainer.style.display === 'block') {
             optionsContainer.style.display = 'none';
         } else {
@@ -159,5 +193,5 @@
         menuIcon.classList.toggle('fa-times');
     }
 </script>
-
+<script src="./js/navbar.js"></script>
 </html>
